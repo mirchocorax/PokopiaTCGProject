@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Producción</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .hidden { display: none; }
+    button { margin: 5px; }
+  </style>
+</head>
+<body>
+
+<h2>App Pokémon</h2>
+
+<button onclick="mostrar('base')">Base</button>
+<button onclick="mostrar('produccion')">Producción</button>
+
+<div id="base">
+  <h3>Base</h3>
+  <div id="listaBase"></div>
+</div>
+
+<div id="produccion" class="hidden">
+  <h3>Producción</h3>
+
+  <label>Material:</label>
+  <select id="material"></select>
+
+  <label>Solo los tengo:</label>
+  <select id="filtro">
+    <option value="no">No</option>
+    <option value="si">Si</option>
+  </select>
+
+  <button onclick="calcular()">Calcular</button>
+
+  <h4>Cadenas</h4>
+  <div id="cadenas"></div>
+
+  <h4>Organizadores</h4>
+  <div id="organizadores"></div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
