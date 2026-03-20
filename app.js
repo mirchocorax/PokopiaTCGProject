@@ -1,5 +1,7 @@
 const STORAGE_KEY = pokemon_data;
 
+alerts("JS Cargando")
+
 function cargarDatos() {
   const guardado = localStorage.getItem(STORAGE_KEY);
 
